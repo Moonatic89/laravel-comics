@@ -11253,3 +11253,12 @@ textarea.form-control-lg {
   background-image: url("../img/jumbotron.jpg");
   height: 400px;
 }
+
+.myCardImg img {
+  height: 185px;
+  width: 185px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}

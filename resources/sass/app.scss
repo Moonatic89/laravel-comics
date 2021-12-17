@@ -10,7 +10,14 @@
     background-image: url('../img/jumbotron.jpg');
     // width: 100vw;
     height: 400px;
-    
+    }
 
+
+.myCardImg img{      
+        height: 185px;
+        width: 185px;
+        object-fit: cover;
+        object-position: top;
+    
 }
 
