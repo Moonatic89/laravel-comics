@@ -1,15 +1,15 @@
 <header id="site_header">
 
     <div class="topBar bg-primary">
-        <div class="container d-flex justify-content-end ">
+        <div class="container d-flex justify-content-end text-light ">
 
-            <div class="visaPow me-5">
+            <div class="visaPow me-5 ">
                 <span>
                     DC POWER VISA
                 </span>
             </div>
 
-            <div class="additional me-5">
+            <div class="additional me-5 ">
                 <span>
                     ADDITIONAL DC SITES
                 </span>
@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <nav class="nav justify-content-center align-items-center">
+    <nav class="nav justify-content-center align-items-center text-dark">
 
         <a class="navbar-brand" href="#">
             <img src="{{asset ('img/dc-logo.png')}}" alt="" width="80">
@@ -37,6 +37,7 @@
 
 
         <span class="f_group">
+            <label for="text">Search</label>
             <input type="text" class="">
             <!-- magnifier here -->
         </span>
