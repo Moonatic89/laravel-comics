@@ -16,6 +16,7 @@
     <!-- CUSTOM CSS -->
     @yield('custom-css')
 
+
 </head>
 
 <body>
@@ -24,7 +25,8 @@
     @include('partials.header')
 
     <main id="site_main">
-        Site Main
+
+        @yield('content')
 
     </main>
 

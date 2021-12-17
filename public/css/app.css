@@ -11248,3 +11248,8 @@ textarea.form-control-lg {
   padding: 0;
   box-sizing: border-box;
 }
+
+.heroImage {
+  background-image: url("../img/jumbotron.jpg");
+  height: 400px;
+}
