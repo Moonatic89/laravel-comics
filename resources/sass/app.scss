@@ -21,3 +21,28 @@
     
 }
 
+.shopImg{
+    width: 55px;
+    height: 55px;
+    }
+
+    .shopImg img{
+        max-width: 55px;
+        height: 55px;
+    }
+
+
+
+    .footerImage{
+    background-image: url('../img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    // width: 100vw;
+    height: 400px;
+    }
+
+     .contactBar {
+    height: 100px;
+    background-color: rgb(54, 54, 54);
+    z-index: 2;
+     }

@@ -11262,3 +11262,26 @@ textarea.form-control-lg {
   -o-object-position: top;
      object-position: top;
 }
+
+.shopImg {
+  width: 55px;
+  height: 55px;
+}
+
+.shopImg img {
+  max-width: 55px;
+  height: 55px;
+}
+
+.footerImage {
+  background-image: url("../img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.contactBar {
+  height: 100px;
+  background-color: #363636;
+  z-index: 2;
+}

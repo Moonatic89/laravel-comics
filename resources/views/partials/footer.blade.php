@@ -1,3 +1,12 @@
 <footer id="site_footer">
-    Site Footer
+
+    <div class="footerImage">
+
+
+    </div>
+
+    <div class="contactBar">
+
+    </div>
+
 </footer>
