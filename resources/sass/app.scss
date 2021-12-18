@@ -1,5 +1,6 @@
 //
 @use 'bootstrap';
+
 *{
     margin: 0;
     padding: 0;
@@ -17,23 +18,26 @@
         height: 185px;
         width: 185px;
         object-fit: cover;
-        object-position: top;
-    
+        object-position: top;   
+    }
+
+.shop{
+    position: relative;
+    z-index: 2;
 }
+
 
 .shopImg{
     width: 55px;
     height: 55px;
     }
 
-    .shopImg img{
+.shopImg img{
         max-width: 55px;
         height: 55px;
     }
 
-
-
-    .footerImage{
+.footerImage{
     background-image: url('../img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,12 +45,44 @@
     height: 400px; 
     }
 
-     .contactBar {
+    .myRow{
+        position: relative;
+    }
+
+.links ul>li{
+    font-size: .9rem;
+     margin-left: -2rem;
+    padding-right: 1rem;
+}
+
+.copyright{
+    font-size: .9rem;
+}
+
+.links ul{
+    list-style-type: none;
+}
+
+
+.logoBig{
+    height: 500px;
+}
+
+ .logoBig img {
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        top: -15%;
+    }
+    
+.contactBar {
     height: 100px;
     background-color: rgb(54, 54, 54);
+    position: relative;
     z-index: 2;
-     }
+    }
 
-     .contacts{
+.contacts{
          height: 100px;
-     }
+    }
+

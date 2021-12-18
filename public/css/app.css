@@ -11263,6 +11263,11 @@ textarea.form-control-lg {
      object-position: top;
 }
 
+.shop {
+  position: relative;
+  z-index: 2;
+}
+
 .shopImg {
   width: 55px;
   height: 55px;
@@ -11280,9 +11285,40 @@ textarea.form-control-lg {
   height: 400px;
 }
 
+.myRow {
+  position: relative;
+}
+
+.links ul > li {
+  font-size: 0.9rem;
+  margin-left: -2rem;
+  padding-right: 1rem;
+}
+
+.copyright {
+  font-size: 0.9rem;
+}
+
+.links ul {
+  list-style-type: none;
+}
+
+.logoBig {
+  height: 500px;
+}
+
+.logoBig img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  top: -15%;
+}
+
 .contactBar {
   height: 100px;
   background-color: #363636;
+  position: relative;
   z-index: 2;
 }
 
