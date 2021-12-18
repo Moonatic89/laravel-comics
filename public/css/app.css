@@ -11285,3 +11285,7 @@ textarea.form-control-lg {
   background-color: #363636;
   z-index: 2;
 }
+
+.contacts {
+  height: 100px;
+}
