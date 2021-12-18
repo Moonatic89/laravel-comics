@@ -12,20 +12,21 @@
     <div class="container pt-5">
         <div class="row">
 
-            @foreach ($issues as $issue)
+            @foreach ($issues as $index => $issue)
 
             <div class="col-2">
 
                 <div class="myCard">
 
                     <div class="myCardImg">
-                        <a href="{{route('issue')}}">
+                        <a href="{{route ('issue', ['id' => $index]) }}">
                             <img src="{{$issue['thumb']}}" class="card-img-top" alt="...">
                         </a>
                     </div>
 
                     <div class="myCardText text-light">
                         <h6>{{strtoupper($issue['series'])}}</h6>
+                        <span>{{$index}}</span>
                     </div>
 
 

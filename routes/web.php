@@ -20,9 +20,8 @@ $issues = config('comics');
     return view('home', compact('issues'));
 });
 
-Route::get('/issue', function () {
+Route::get('/issue/{id}', function () {
 
- $issues = config('comics');
+    return view('issue');
 
-    return view('issue', compact('issues'));
 })->name('issue');
