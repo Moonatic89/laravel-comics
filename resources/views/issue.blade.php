@@ -2,5 +2,10 @@
 
 @section ('content')
 
-THIS IS AN ISSUE
+<p>
+    {{$comic['title']}}
+</p>
+
+
+
 @endsection

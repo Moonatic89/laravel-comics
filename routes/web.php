@@ -20,8 +20,11 @@ $issues = config('comics');
     return view('home', compact('issues'));
 });
 
-Route::get('/issue/{id}', function () {
+Route::get('/issue/{id}', function($id) {
+    
+$issues = config('comics');
+$comic = $issues[$id];
 
-    return view('issue');
+    return view('issue', compact('comic'));
 
 })->name('issue');

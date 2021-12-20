@@ -20,7 +20,7 @@
 
                     <div class="myCardImg">
                         <a href="{{route ('issue', ['id' => $index]) }}">
-                            <img src="{{$issue['thumb']}}" class="card-img-top" alt="...">
+                            <img src="{{$issue['thumb']}}" class="card-img-top" alt="{{$issue['title']}}">
                         </a>
                     </div>
 
