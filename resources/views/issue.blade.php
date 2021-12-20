@@ -3,79 +3,97 @@
 @section ('content')
 
 
-<div class="container">
+<div class="container mt-5">
 
-    <div class="issueBlock">
+    <div class="issueBlock d-flex">
 
-        <div class="issueTitle">
-            <span>
-                {{$comic['title']}}
-            </span>
+        <div class="issueText">
 
-        </div>
-
-        <div class="pricing">
-            <div class="leftCol">
-                <span>
-                    U.S. Price: {{$comic['price']}}
-                </span>
-                <span>
-                    AVAILABLE
-                </span>
+            <div class="issueTitle">
+                <h2>{{strtoupper($comic['title'])}}</h2>
             </div>
 
-            <div class="rightCol">
-                <span>
-                    Check Availability
-                </span>
+            <div class="issuePricing d-flex align-items-center mt-3">
+
+                <div class="leftCol d-flex justify-content-between flex-grow-1">
+                    <span class="p-3 text-white-50">
+                        U.S. Price: <span class="text-white">{{$comic['price']}}</span>
+                    </span>
+                    <span class="p-3 text-white-50">
+                        AVAILABLE
+                    </span>
+                </div>
+
+                <div class="rightCol">
+                    <span class="p-3 text-white">
+                        Check Availability
+                    </span>
+                </div>
             </div>
+
+            <div class="issueDesc mt-3 text-muted fw-bold">
+                {{$comic['description']}}
+
+            </div>
+
         </div>
 
-        <div class="issueDesc">
-            {{$comic['description']}}
-
+        <div class="issueAdv">
+            <div class="">
+                ADVERTISEMENT
+            </div>
+            <img src="{{asset ('img/commercial.jpg')}}" alt="" width="80">
         </div>
-
     </div>
 
 </div>
 
 
 <div class="issueArtists">
+
     <div class="container">
 
-        <div class="talents">
+        <div class="info d-flex">
 
-            <div class="graphic">
-
+            <div class="talents">
                 <span>
-                    Art by:
+                    Talent
                 </span>
+                <div class="graphic">
 
-                <span>
-                    @foreach ($comic['artists'] as $artist)
-                    {{$artist}}
-                    @endforeach
-                </span>
+                    <span>
+                        Art by:
+                    </span>
 
-            </div>
+                    <span>
+                        @foreach ($comic['artists'] as $artist)
+                        {{$artist}}
+                        @endforeach
+                    </span>
 
-            <div class="textual">
+                </div>
 
-                <span>
-                    Written by:
-                </span>
+                <div class="textual">
 
-                <span>
-                    @foreach ($comic['artists'] as $artist)
-                    {{$artist}}
-                    @endforeach
-                </span>
+                    <span>
+                        Written by:
+                    </span>
+
+                    <span>
+                        @foreach ($comic['artists'] as $artist)
+                        {{$artist}}
+                        @endforeach
+                    </span>
 
 
+                </div>
             </div>
 
             <div class="specs">
+
+                <span>
+                    Specs
+                </span>
 
                 <div class="specSeries">
                     <span>
@@ -109,57 +127,59 @@
                     </span>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
 
+</div>
 
-    <div class="issueShop">
-        <div class="container">
-            <div class="row">
-                <div class="col d-flex align-items-center border border-light">
-                    <div class="shopImg me-3">
-                        <img src="{{asset ('img/buy-comics-digital-comics.png')}}" class="" alt="">
-                    </div>
-                    <span>
-                        DIGITAL COMICS
-                    </span>
+
+<div class="issueShop">
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex align-items-center border border-light">
+                <div class="shopImg me-3">
+                    <img src="{{asset ('img/buy-comics-digital-comics.png')}}" class="" alt="">
                 </div>
-
-
-                <div class="col d-flex align-items-center border border-light">
-                    <div class="shopImg me-3">
-                        <img src="{{asset ('img/buy-comics-digital-comics.png')}}" class="" alt="">
-                    </div>
-                    <span>
-                        SHOP DC
-                    </span>
-                </div>
-
-
-                <div class="col d-flex align-items-center border border-light">
-                    <div class="shopImg me-3">
-                        <img src="{{asset ('img/buy-comics-digital-comics.png')}}" class="" alt="">
-                    </div>
-                    <span>
-                        COMIC SHOP LOCATOR
-                    </span>
-                </div>
-
-
-                <div class="col d-flex align-items-center border border-light">
-                    <div class="shopImg me-3">
-                        <img src="{{asset ('img/buy-comics-digital-comics.png')}}" class="" alt="">
-                    </div>
-                    <span>
-                        SUBSCRIPTIONS
-                    </span>
-                </div>
-
+                <span>
+                    DIGITAL COMICS
+                </span>
             </div>
+
+
+            <div class="col d-flex align-items-center border border-light">
+                <div class="shopImg me-3">
+                    <img src="{{asset ('img/buy-comics-digital-comics.png')}}" class="" alt="">
+                </div>
+                <span>
+                    SHOP DC
+                </span>
+            </div>
+
+
+            <div class="col d-flex align-items-center border border-light">
+                <div class="shopImg me-3">
+                    <img src="{{asset ('img/buy-comics-digital-comics.png')}}" class="" alt="">
+                </div>
+                <span>
+                    COMIC SHOP LOCATOR
+                </span>
+            </div>
+
+
+            <div class="col d-flex align-items-center border border-light">
+                <div class="shopImg me-3">
+                    <img src="{{asset ('img/buy-comics-digital-comics.png')}}" class="" alt="">
+                </div>
+                <span>
+                    SUBSCRIPTIONS
+                </span>
+            </div>
+
         </div>
     </div>
+</div>
 
 
 
-    @endsection
+@endsection
