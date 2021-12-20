@@ -11325,3 +11325,18 @@ textarea.form-control-lg {
 .contacts {
   height: 100px;
 }
+
+.issueArtists {
+  background-color: #F6F6F6;
+}
+
+.issueShop {
+  position: relative;
+  background-color: #F6F6F6;
+}
+.issueShop .container {
+  padding: 1rem 0;
+  position: relative;
+  z-index: 2;
+  background-color: #F6F6F6;
+}

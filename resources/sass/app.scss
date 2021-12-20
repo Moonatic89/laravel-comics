@@ -1,88 +1,105 @@
 //
 @use 'bootstrap';
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.heroImage{
+.heroImage {
     background-image: url('../img/jumbotron.jpg');
     // width: 100vw;
     height: 400px;
-    }
+}
 
 
-.myCardImg img{      
-        height: 185px;
-        width: 185px;
-        object-fit: cover;
-        object-position: top;   
-    }
+.myCardImg img {
+    height: 185px;
+    width: 185px;
+    object-fit: cover;
+    object-position: top;
+}
 
-.shop{
+.shop {
     position: relative;
     z-index: 2;
 }
 
 
-.shopImg{
+.shopImg {
     width: 55px;
     height: 55px;
-    }
+}
 
-.shopImg img{
-        max-width: 55px;
-        height: 55px;
-    }
+.shopImg img {
+    max-width: 55px;
+    height: 55px;
+}
 
-.footerImage{
+.footerImage {
     background-image: url('../img/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     // width: 100vw;
-    height: 400px; 
-    }
+    height: 400px;
+}
 
-    .myRow{
-        position: relative;
-    }
+.myRow {
+    position: relative;
+}
 
-.links ul>li{
+.links ul>li {
     font-size: .9rem;
-     margin-left: -2rem;
+    margin-left: -2rem;
     padding-right: 1rem;
 }
 
-.copyright{
+.copyright {
     font-size: .9rem;
 }
 
-.links ul{
+.links ul {
     list-style-type: none;
 }
 
 
-.logoBig{
+.logoBig {
     height: 500px;
 }
 
- .logoBig img {
-        width: 100%;
-        object-fit: cover;
-        position: relative;
-        top: -15%;
-    }
-    
+.logoBig img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    top: -15%;
+}
+
 .contactBar {
     height: 100px;
     background-color: rgb(54, 54, 54);
     position: relative;
     z-index: 2;
-    }
+}
 
-.contacts{
-         height: 100px;
-    }
+.contacts {
+    height: 100px;
+}
 
+
+.issueArtists {
+    background-color: #F6F6F6;
+}
+
+.issueShop {
+    position: relative;
+    background-color: #F6F6F6;
+
+    .container {
+        padding: 1rem 0;
+        position: relative;
+        z-index: 2;
+        background-color: #F6F6F6;
+
+    }
+}
