@@ -26,6 +26,9 @@
 
     <main id="site_main">
 
+        @include('partials.jumbo')
+
+
         @yield('content')
 
     </main>

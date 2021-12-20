@@ -2,6 +2,8 @@
 
 @section ('content')
 
+
+
 <div class="issueBlock">
 
     <div class="issueTitle">
@@ -35,8 +37,8 @@
 
 </div>
 
-<div class="issueArtists">
 
+<div class="issueArtists">
     <div class="talents">
 
         <div class="graphic">
@@ -46,7 +48,9 @@
             </span>
 
             <span>
-                {{$comic['artists']}}
+                @foreach ($comic['artists'] as $artist)
+                {{$artist}}
+                @endforeach
             </span>
 
         </div>
@@ -58,23 +62,50 @@
             </span>
 
             <span>
-                {{$comic['writers']}}
+                @foreach ($comic['artists'] as $artist)
+                {{$artist}}
+                @endforeach
             </span>
 
 
         </div>
 
+        <div class="specs">
+
+            <div class="specSeries">
+                <span>
+                    Series:
+                </span>
+
+                <span>
+                    {{$comic['series']}}
+                </span>
+            </div>
+
+            <div class="specPricing">
+                <span>
+                    U.S. Price:
+                </span>
+
+                <span>
+                    {{$comic['price']}}
+                </span>
+            </div>
+
+            <div class="specOnSale">
+                <span>
+                    On Sale Date:
+                </span>
+
+                <!-- WARNING! This should be on date style, not just a number -->
+
+                <span>
+                    {{$comic['sale_date']}}
+                </span>
+            </div>
+        </div>
+
     </div>
 
-    <div class="specs">
 
-    </div>
-
-</div>
-
-<p>
-</p>
-
-
-
-@endsection
+    @endsection

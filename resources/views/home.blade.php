@@ -2,11 +2,6 @@
 
 @section ('content')
 
-
-<div class="heroImage">
-
-</div>
-
 <div class="issues bg-dark">
 
     <div class="container pt-5">
