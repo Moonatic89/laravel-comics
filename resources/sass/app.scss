@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+.w_50 {
+    width: calc(100%/2);
+}
+
 .heroImage {
     background-image: url('../img/jumbotron.jpg');
     // width: 100vw;
@@ -86,28 +90,52 @@
     height: 100px;
 }
 
+.issueCoverSection{
+    height: 80px;
+    position: relative
+}
 
-.issuePricing{
+.issueCover{
+    position: absolute
+}
+
+.issueCover .cover img{
+width: 200px;
+}
+
+
+
+
+.issuePricing {
     background-color: #55BA59;
     border-bottom: 1px solid #357739;
-.leftCol{
-    border-right: 1px solid #357739;
-}
+
+    .leftCol {
+        border-right: 1px solid #357739;
+    }
 }
 
 
-.issueBlock > .issueAdv > img{
+.issueBlock>.issueAdv>img {
 
     width: 300px;
 }
 
-.issueBlock > .issueAdv{
+.issueBlock>.issueAdv {
     padding: 2rem;
 }
 
 
 .issueArtists {
     background-color: #F6F6F6;
+
+    .info>.talents, .info>.specs {
+        width: 50%;
+    }
+
+    .prefix {
+        width: calc(100% / 2);
+    }
 }
 
 .issueShop {
