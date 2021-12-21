@@ -92,17 +92,32 @@
 
 .issueCoverSection{
     height: 80px;
-    position: relative
+    position: relative;
 }
 
 .issueCover{
-    position: absolute
+    position: absolute;
+    transform: translate(0, -75%);
 }
 
 .issueCover .cover img{
 width: 200px;
 }
 
+.issueCover .tag{
+    background-color: #00A9D9;
+    position: relative;
+}
+
+.issueCover .upper{
+    top: 25px;
+    left: 1px;
+}
+
+.issueCover .lower{
+    bottom: 25px;
+    margin: 0 1px;
+}
 
 
 

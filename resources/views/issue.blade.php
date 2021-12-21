@@ -3,6 +3,24 @@
 @section ('content')
 
 
+<div class="issueCoverSection bg-primary">
+    <div class="container">
+        <div class="issueCover">
+            <span class="upper tag text-white">
+                COMIC BOOK
+            </span>
+            <div class="cover border border-white">
+                <img src="{{$comic['thumb']}}" class="card-img-top" alt="{{$comic['title']}}">
+            </div>
+            <div class="lower tag text-center text-white">
+                VIEW GALLERY
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
 <div class="container mt-5">
 
     <div class="issueBlock d-flex">
@@ -55,17 +73,18 @@
 
         <div class="info d-flex">
 
-            <div class="talents">
-                <span>
+            <div class="talents pt-3 me-5">
+                <div class="fs-4 border-bottom border-secondary pb-4">
                     Talent
-                </span>
-                <div class="graphic d-flex">
+                </div>
 
-                    <span>
+                <div class="graphic d-flex pt-3 pb-3 border-bottom border-secondary">
+
+                    <span class="prefix">
                         Art by:
                     </span>
 
-                    <span>
+                    <span class="list pe-3 text-primary">
                         @foreach ($comic['artists'] as $artist)
                         {{$artist}}
                         @endforeach
@@ -73,13 +92,13 @@
 
                 </div>
 
-                <div class="textual d-flex">
+                <div class="textual d-flex pt-3 pb-3 border-bottom border-secondary">
 
-                    <span>
+                    <span class="prefix">
                         Written by:
                     </span>
 
-                    <span>
+                    <span class="list pe-3 text-primary">
                         @foreach ($comic['artists'] as $artist)
                         {{$artist}}
                         @endforeach
@@ -89,24 +108,25 @@
                 </div>
             </div>
 
-            <div class="specs">
+            <div class="specs pt-3">
 
-                <span>
+                <div class="fs-4 pb-4 border-bottom border-secondary">
                     Specs
-                </span>
+                </div>
 
-                <div class="specSeries d-flex">
-                    <span>
+                <div class="specSeries d-flex pt-3 pb-3 border-bottom border-secondary">
+                    <span class="w_50">
                         Series:
                     </span>
 
-                    <span>
-                        {{$comic['series']}}
+                    <span class="text-primary ">
+                        {{strtoupper($comic['series'])}}
                     </span>
                 </div>
 
-                <div class="specPricing d-flex">
-                    <span>
+                <div class="specPricing d-flex pt-3 pb-3 border-bottom border-secondary">
+
+                    <span class="w_50">
                         U.S. Price:
                     </span>
 
@@ -115,8 +135,9 @@
                     </span>
                 </div>
 
-                <div class="specOnSale">
-                    <span>
+                <div class="specOnSale d-flex pt-3 pb-3 border-bottom border-secondary">
+
+                    <span class="w_50">
                         On Sale Date:
                     </span>
 

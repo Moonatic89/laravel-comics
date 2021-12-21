@@ -11249,6 +11249,10 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
+.w_50 {
+  width: 50%;
+}
+
 .heroImage {
   background-image: url("../img/jumbotron.jpg");
   height: 400px;
@@ -11326,6 +11330,35 @@ textarea.form-control-lg {
   height: 100px;
 }
 
+.issueCoverSection {
+  height: 80px;
+  position: relative;
+}
+
+.issueCover {
+  position: absolute;
+  transform: translate(0, -75%);
+}
+
+.issueCover .cover img {
+  width: 200px;
+}
+
+.issueCover .tag {
+  background-color: #00A9D9;
+  position: relative;
+}
+
+.issueCover .upper {
+  top: 25px;
+  left: 1px;
+}
+
+.issueCover .lower {
+  bottom: 25px;
+  margin: 0 1px;
+}
+
 .issuePricing {
   background-color: #55BA59;
   border-bottom: 1px solid #357739;
@@ -11344,6 +11377,12 @@ textarea.form-control-lg {
 
 .issueArtists {
   background-color: #F6F6F6;
+}
+.issueArtists .info > .talents, .issueArtists .info > .specs {
+  width: 50%;
+}
+.issueArtists .prefix {
+  width: 50%;
 }
 
 .issueShop {

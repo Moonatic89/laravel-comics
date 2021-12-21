@@ -15,12 +15,12 @@
 
                     <div class="myCardImg">
                         <a href="{{route ('issue', ['id' => $index]) }}">
-                            <img src="{{$issue['thumb']}}" class="card-img-top" alt="{{$issue['title']}}">
+                            <img src="{{$issue['thumb']}}" class="card-img-top" alt="{{$issue['title']}}>
                         </a>
                     </div>
 
-                    <div class="myCardText text-light">
-                        <h6>{{strtoupper($issue['series'])}}</h6>
+                    <div class=" myCardText text-light">
+                            <h6>{{strtoupper($issue['series'])}}</h6>
                     </div>
 
 
