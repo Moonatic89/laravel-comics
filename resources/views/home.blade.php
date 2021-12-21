@@ -21,7 +21,6 @@
 
                     <div class="myCardText text-light">
                         <h6>{{strtoupper($issue['series'])}}</h6>
-                        <span>{{$index}}</span>
                     </div>
 
 

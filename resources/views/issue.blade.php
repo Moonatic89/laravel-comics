@@ -39,10 +39,10 @@
         </div>
 
         <div class="issueAdv">
-            <div class="">
+            <div class="text-end">
                 ADVERTISEMENT
             </div>
-            <img src="{{asset ('img/commercial.jpg')}}" alt="" width="80">
+            <img src="{{asset ('img/commercial.jpg')}}" alt="">
         </div>
     </div>
 
@@ -59,7 +59,7 @@
                 <span>
                     Talent
                 </span>
-                <div class="graphic">
+                <div class="graphic d-flex">
 
                     <span>
                         Art by:
@@ -73,7 +73,7 @@
 
                 </div>
 
-                <div class="textual">
+                <div class="textual d-flex">
 
                     <span>
                         Written by:
@@ -95,7 +95,7 @@
                     Specs
                 </span>
 
-                <div class="specSeries">
+                <div class="specSeries d-flex">
                     <span>
                         Series:
                     </span>
@@ -105,7 +105,7 @@
                     </span>
                 </div>
 
-                <div class="specPricing">
+                <div class="specPricing d-flex">
                     <span>
                         U.S. Price:
                     </span>
